@@ -636,11 +636,7 @@ font-size: 40px;
   width: 200px;
 }
 
-.contact-us{
-  background: url("../asset/image/wish.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;  
+.contact-us{ 
   position: relative;
   padding: 30px 250px 30px 250px;
   font-size: 18px;
