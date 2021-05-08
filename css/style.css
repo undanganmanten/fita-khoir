@@ -74,13 +74,13 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px white; 
+    box-shadow: inset 0 0 1px red; 
     border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: white; 
+    background: rgb(255, 255, 255); 
     border-radius: 10px;
   }
 
@@ -90,7 +90,7 @@ body{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: black; 
+    background: rgb(114, 0, 0); 
   }
 
  /*loader*/
@@ -790,7 +790,7 @@ font-size: 40px;
   padding-top: 5px;
 }
 
-#task_title{
+#task_ucapan{
   font-family:monospace;
   font-size:19px;
   width:100%;
@@ -799,11 +799,11 @@ font-size: 40px;
   color: white;
 }
 
-#task_title p{
+#task_ucapan p{
   padding-right: 10px;
 }
 
-#task_date{
+#task_nama{
   text-align: left;
   padding: 0;
   font-family:monospace;
@@ -1052,11 +1052,11 @@ font-size: 40px;
       padding-right:0 ;
   }
 
-  #task_title{
+  #task_ucapan{
       font-size: 15px;
   }
 
-  #task_date{
+  #task_nama{
       font-size: 14px;
   }
 

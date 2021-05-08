@@ -69,26 +69,14 @@ var x = setInterval(function() {
 }, 1000);
 
 var firebaseConfig = {
-  apiKey: "AIzaSyBbKtu4XbMvEFZDb-FGgMxW40RyNbllHfE",
-  authDomain: "qonita-9d7ca.firebaseapp.com",
-  databaseURL: "https://qonita-9d7ca-default-rtdb.firebaseio.com",
-  projectId: "qonita-9d7ca",
-  storageBucket: "qonita-9d7ca.appspot.com",
-  messagingSenderId: "295376988706",
-  appId: "1:295376988706:web:f6f7bde6ae3ddc6b88f87b",
-  measurementId: "G-4H0HZGXW5P"
+  apiKey: "AIzaSyD6Pir-8GIu8_ioQ4KwMx4SIdUpYX3M2TU",
+  authDomain: "fita-10916.firebaseapp.com",
+  databaseURL: "https://fita-10916-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "fita-10916",
+  storageBucket: "fita-10916.appspot.com",
+  messagingSenderId: "19028738116",
+  appId: "1:19028738116:web:c4f80ef0e8c0ba412e3c11"
 };
-
-// var firebaseConfig = {
-//     apiKey: "AIzaSyAcRO57X8UNRAZ0rLhGjYk2ttXX95VtI84",
-//     authDomain: "comments-7198f.firebaseapp.com",
-//     databaseURL: "https://comments-7198f-default-rtdb.firebaseio.com",
-//     projectId: "comments-7198f",
-//     storageBucket: "comments-7198f.appspot.com",
-//     messagingSenderId: "376364050831",
-//     appId: "1:376364050831:web:14e14651ae6a51eade83fa",
-//     measurementId: "G-3W394RQG3Y"
-//   };
   
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -101,8 +89,8 @@ var firebaseConfig = {
       // our boxes have data and we take database
       var key = firebase.database().ref().child("comments").push().key;
       var task = {
-        title: input_box.value,
-        date: input_date.value,
+        ucapan: input_box.value,
+        nama: input_date.value,
         key: key
       };
   
@@ -128,9 +116,9 @@ function create_unfinished_task(){
         task_array.push(Object.values(childData));
       });
       for(var i, i = 0; i < task_array.length; i++){
-        task_date = task_array[i][0];
-        task_key = task_array[i][1];
-        task_title = task_array[i][2];  
+        task_nama = task_array[i][1];
+        task_key = task_array[i][0];
+        task_ucapan = task_array[i][2];  
   
         task_container = document.createElement("div");
         task_container.setAttribute("class", "task_container");
@@ -140,20 +128,20 @@ function create_unfinished_task(){
         task_data = document.createElement('div');
         task_data.setAttribute('id', 'task_data');
   
-        title = document.createElement('p');
-        title.setAttribute('id', 'task_title');
-        title.innerHTML = task_title;
+        ucapan = document.createElement('p');
+        ucapan.setAttribute('id', 'task_ucapan');
+        ucapan.innerHTML = task_ucapan;
   
-        date = document.createElement('p');
-        date.setAttribute('id', 'task_date');
-        date.innerHTML = "-" + task_date + "-";
+        nama = document.createElement('p');
+        nama.setAttribute('id', 'task_nama');
+        nama.innerHTML = "-" + task_nama + "-";
 
 
   
         unfinished_task_container.append(task_container);
         task_container.append(task_data);
-        task_data.append(title);
-        task_data.append(date);
+        task_data.append(ucapan);
+        task_data.append(nama);
       }
   
     });
