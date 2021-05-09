@@ -283,6 +283,7 @@ img{
 
 .ornamen img, .ornamen1 img{
   width: 130px;
+  height: 110px;
 }
 
 .ornamen2{
@@ -295,6 +296,7 @@ img{
 
 .ornamen2 img{
   width: 100px;
+  height: 123px;
 }
 
 .right-flower{
@@ -347,7 +349,8 @@ img{
 }
 
 .bride img{
-  width: 700px;
+  width: 650px;
+  height: 430px;
 }
 
 .bride{
@@ -633,7 +636,7 @@ font-size: 40px;
 }
 
 .wish-img img{
-  width: 200px;
+  width: 120px;
 }
 
 .contact-us{ 
@@ -760,13 +763,17 @@ font-size: 40px;
 }
 
  .container1{
-  width:100%;
-  height:40vh;
+  width: 100%;
+  height: 40vh;
   display: block;
   overflow: auto;
   overflow-x: hidden;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
   /* padding-right: 10px; */
+  background: url("../asset/image/bg-comment.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .task_container{
@@ -895,7 +902,7 @@ font-size: 40px;
   }
 
   .bride img{
-    width: 350px;
+    width: 335px !important;
   }
 
   .text-block p{
