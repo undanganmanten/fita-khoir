@@ -68,6 +68,8 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+
+//firebase
 var firebaseConfig = {
   apiKey: "AIzaSyD6Pir-8GIu8_ioQ4KwMx4SIdUpYX3M2TU",
   authDomain: "fita-10916.firebaseapp.com",
@@ -98,8 +100,9 @@ var firebaseConfig = {
       updates["/comments/" + key] = task;
       firebase.database().ref().update(updates);
       create_unfinished_task();
-      document.getElementById("name").value=''; 
-      document.getElementById("message").value='';
+      swal("Pesan telah terkirim", "Silakan cek pesan anda di kolom yang sudah ada", "success");
+      input_box.value='';
+      input_date.value='';
     }
   }
 
@@ -145,5 +148,5 @@ function create_unfinished_task(){
       }
   
     });
-  
+    
   }
