@@ -554,7 +554,7 @@ font-size: 40px;
 .waktu .akad span,
 .kediaman span{
   font-family: 'qalistha';
-  font-size: 25px;
+  font-size: 23px;
   color: white;
   font-weight: bolder;
 }
@@ -697,9 +697,6 @@ font-size: 40px;
   font-size: 16px
 }
 
-
-
-
 .wish-img{
   display: flex;
   justify-content: center;
@@ -708,6 +705,7 @@ font-size: 40px;
 
 .wish-img img{
   width: 120px;
+  height: 90px;
 }
 
 .contact-us{ 
