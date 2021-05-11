@@ -206,7 +206,7 @@
                     </div>
                     <div class="btn-loading">
                         <button disabled class="buttonload d-none" id="btn-loading">
-                            <i class="fa fa-circle-o-notch fa-spin"></i> Loading...
+                            <i class="fa fa-circle-o-notch fa-spin"></i> Sedang mengirim...
                         </button>
                     </div>
                 </div>
@@ -284,6 +284,8 @@
             .catch(error => {
                 console.error('Error!', error.message);
                 swal("Mohon maaf!", "Konfirmasi kehadiran anda gagal terkirim, mohon untuk mengulangi lagi", "error");
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
             })
         })
       </script>
