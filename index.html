@@ -192,7 +192,15 @@
                     <br>
                     <input id="alamat" name="Alamat" placeholder="Alamat anda" required/>
                     <br>
-                    <input id="kehadiran" name="Kehadiran" required placeholder="Apakah anda bisa menghadiri acara atau tidak?" />
+                    <div class="hadir-confirm">
+                        <p>
+                            <input type="radio" id="kehadiran" name="Kehadiran" value="Hadir" checked> 
+                            <label for="kehadiran" style="margin-right: 50px;">Hadir</label>
+                            <input type="radio" id="kehadiran1" name="Kehadiran" value="Tidak Hadir">
+                            <label for="kehadiran1">Tidak Hadir</label>
+                        </p>                        
+                    </div>
+                    <!-- <input id="kehadiran" name="Kehadiran" required placeholder="Apakah anda bisa menghadiri acara atau tidak?" /> -->
                     <div class="btn">
                         <button type="submit" class="buttonkirim">Send</button>
                     </div>
