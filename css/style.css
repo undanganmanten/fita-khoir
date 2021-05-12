@@ -531,7 +531,7 @@ font-size: 40px;
   display: flex;
   justify-content: center;
   width: 100vw;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .waktu .akad{
@@ -557,6 +557,7 @@ font-size: 40px;
   font-size: 23px;
   color: white;
   font-weight: bolder;
+  z-index: 100;
 }
 
 .waktu .resepsi p,
